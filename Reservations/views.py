@@ -94,3 +94,5 @@ def cancelbooking(request,id):
     Role = UserRole.objects.get(user = request.user)
     link = reverse('Reservations:viewbookings')
     return HttpResponseRedirect(link)
+
+
